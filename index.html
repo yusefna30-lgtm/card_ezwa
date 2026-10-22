@@ -111,17 +111,16 @@
             overflow: hidden;
         }
 
-        .catalog-video-container {
+        .catalog-img-container {
             width: 100%;
-            height: 480px;
+            height: 380px;
             background: #12080b;
-            position: relative;
         }
 
-        .catalog-video-container iframe {
+        .catalog-img-container img {
             width: 100%;
             height: 100%;
-            border: none;
+            object-fit: cover;
             display: block;
         }
 
@@ -208,6 +207,7 @@
         }
         
         .btn.store .icon-box { color: #f59e0b; }
+        .btn.youtube .icon-box { color: #ff0000; }
         .btn.whatsapp .icon-box { color: #4ade80; }
         .btn.snap .icon-box { color: #facc15; }
         .btn.insta .icon-box { color: #f472b6; }
@@ -241,18 +241,18 @@
         </div>
 
         <div class="catalog-card">
-            <!-- عرض مقطع الفيديو القصير (Shorts) مباشرة بتصميم فاخر -->
-            <div class="catalog-video-container">
-                <iframe src="https://www.youtube.com/embed/P4VRqauFvBY?autoplay=1&mute=1&loop=1&playlist=P4VRqauFvBY" title="أول تيشيرت ستريت وير تفاعلي بتقنية NFC في السعودية" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="catalog-img-container">
+                <img src="ezwa-hero.webp" alt="تراثنا بتقنية المستقبل - عزوة">
             </div>
             <div class="catalog-details">
-                <div class="catalog-tag">TECH HERITAGE • اكتشف التجربة</div>
-                <div class="catalog-title">أول تيشيرت بتقنية الـ NFC في السعودية</div>
-                <div class="catalog-desc">شاهد تفاصيل الدمج بين التراث السعودي وتكنولوجيا المستقبل.</div>
+                <div class="catalog-tag">TECH HERITAGE • إصدار حصري</div>
+                <div class="catalog-title">أول تيشرت بتقنية الـ NFC في السعودية</div>
+                <div class="catalog-desc">من نقوش أجدادنا إلى تكنولوجيا الغد - تيشيرت يحمل هويتك ويشارك عالمك بلمسة.</div>
                 
-                <a href="https://ezwa.net/" class="buy-btn" target="_blank">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span>اكتشف التجربة - اطلب الآن</span>
+                <!-- زر اكتشف التجربة الموجه لليوتيوب -->
+                <a href="https://youtube.com/shorts/P4VRqauFvBY?si=dNKepoM2aUv2LyP3" class="buy-btn" target="_blank">
+                    <i class="fa-solid fa-play"></i>
+                    <span>اكتشف التجربة - شاهد الفيديو</span>
                 </a>
             </div>
         </div>
@@ -262,6 +262,15 @@
                 <div class="btn-content">
                     <div class="icon-box"><i class="fa-solid fa-bag-shopping"></i></div>
                     <span>زيارة المتجر الإلكتروني</span>
+                </div>
+                <i class="fa-solid fa-chevron-left btn-arrow"></i>
+            </a>
+
+            <!-- زر إضافي لرابط اليوتيوب في القائمة -->
+            <a href="https://youtube.com/shorts/P4VRqauFvBY?si=dNKepoM2aUv2LyP3" class="btn youtube" target="_blank">
+                <div class="btn-content">
+                    <div class="icon-box"><i class="fa-brands fa-youtube"></i></div>
+                    <span>شاهد التجربة على اليوتيوب</span>
                 </div>
                 <i class="fa-solid fa-chevron-left btn-arrow"></i>
             </a>
