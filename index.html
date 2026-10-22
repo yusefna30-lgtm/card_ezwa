@@ -111,16 +111,17 @@
             overflow: hidden;
         }
 
-        .catalog-img-container {
+        .catalog-video-container {
             width: 100%;
-            height: 380px;
+            height: 480px;
             background: #12080b;
+            position: relative;
         }
 
-        .catalog-img-container img {
+        .catalog-video-container iframe {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            border: none;
             display: block;
         }
 
@@ -240,13 +241,14 @@
         </div>
 
         <div class="catalog-card">
-            <div class="catalog-img-container">
-                <img src="ezwa-hero.webp" alt="تراثنا بتقنية المستقبل - عزوة">
+            <!-- عرض مقطع الفيديو القصير (Shorts) مباشرة بتصميم فاخر -->
+            <div class="catalog-video-container">
+                <iframe src="https://www.youtube.com/embed/P4VRqauFvBY?autoplay=1&mute=1&loop=1&playlist=P4VRqauFvBY" title="أول تيشيرت ستريت وير تفاعلي بتقنية NFC في السعودية" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="catalog-details">
-                <div class="catalog-tag">TECH HERITAGE • إصدار حصري</div>
-                <div class="catalog-title">أول تيشرت بتقنية الـ NFC في السعودية</div>
-                <div class="catalog-desc">من نقوش أجدادنا إلى تكنولوجيا الغد - تيشيرت يحمل هويتك ويشارك عالمك بلمسة.</div>
+                <div class="catalog-tag">TECH HERITAGE • اكتشف التجربة</div>
+                <div class="catalog-title">أول تيشيرت بتقنية الـ NFC في السعودية</div>
+                <div class="catalog-desc">شاهد تفاصيل الدمج بين التراث السعودي وتكنولوجيا المستقبل.</div>
                 
                 <a href="https://ezwa.net/" class="buy-btn" target="_blank">
                     <i class="fa-solid fa-bag-shopping"></i>
